@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartRent | Hệ thống tìm kiếm mặt bằng thông minh</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    /* HERO */
+    .hero-section {
+      min-height: 90vh;
+      background: linear-gradient(135deg, #dc3545, #b02a37);
+      padding-top: 100px;
+    }
+
+    .search-bar {
+      max-width: 520px;
+    }
+
+    /* SECTION TITLE */
+    h3, h4 {
+      letter-spacing: 0.5px;
+    }
+
+    /* FOOTER */
+    footer {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger fs-4" href="#">
+      Hệ thống tìm kiếm mặt bằng thông minh
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto fw-semibold align-items-center gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Trang chủ</a>
+        </li>
+
+        <li class="nav-item d-none" id="postTab">
+          <a class="nav-link" href="#">Bài đăng</a>
+        </li>
+
+        <li class="nav-item d-none" id="favTab">
+          <a class="nav-link" href="#">Yêu thích</a>
+        </li>
+
+        <li class="nav-item" id="loginLink">
+          <a class="btn btn-outline-danger btn-sm px-3" href="/auth/login.html">
+            Đăng nhập
+          </a>
+        </li>
+
+        <li class="nav-item d-none" id="userInfo">
+          <span class="me-2 text-muted">👤</span>
+          <span id="usernameDisplay" class="fw-bold text-danger"></span>
+          <a href="#" id="logoutBtn" class="ms-2 text-muted small">Đăng xuất</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-section text-center text-white d-flex align-items-center">
+  <div class="container">
+    <h1 class="fw-bold mb-3">
+      Tìm kiếm mặt bằng cho thuê tại Hà Nội
+    </h1>
+    <p class="lead mb-4 opacity-75">
+      Nền tảng hỗ trợ tìm kiếm, so sánh và lựa chọn mặt bằng kinh doanh hiệu quả
+    </p>
+
+    <div class="search-bar mx-auto bg-white rounded-3 shadow-sm p-3 d-flex gap-2">
+      <input id="searchInput" class="form-control border-0" placeholder="Nhập quận, loại hình, tên...">
+      <button id="searchBtn" class="btn btn-danger px-4">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GỢI Ý ================= -->
+<section class="py-5">
+  <div class="container">
+    <h4 class="fw-bold text-danger mb-4">
+      🏠 Gợi ý mặt bằng gần bạn
+    </h4>
+    <div id="nearbyContainer" class="row g-4"></div>
+  </div>
+</section>
+
+<!-- ================= DANH SÁCH ================= -->
+<main class="container pb-5">
+  <h3 class="text-center fw-semibold mb-4 text-danger">
+    Danh sách mặt bằng nổi bật
+  </h3>
+  <div id="listingContainer" class="row g-4"></div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 SmartRent • Hệ thống tìm kiếm mặt bằng thông minh
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar')
+      .classList.toggle('scrolled', window.scrollY > 40);
+  });
+</script>
+
+<script type="module">
+  const loginLink = document.getElementById("loginLink");
+  const userInfo = document.getElementById("userInfo");
+  const usernameDisplay = document.getElementById("usernameDisplay");
+  const logoutBtn = document.getElementById("logoutBtn");
+  const favTab = document.getElementById("favTab");
+  const postTab = document.getElementById("postTab");
+
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  if (currentUser) {
+    loginLink.classList.add("d-none");
+    userInfo.classList.remove("d-none");
+    favTab.classList.remove("d-none");
+    postTab.classList.remove("d-none");
+    usernameDisplay.textContent = currentUser.email || "User";
+  } else {
+    loginLink.classList.remove("d-none");
+    userInfo.classList.add("d-none");
+  }
+
+  logoutBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    localStorage.clear();
+    window.location.reload();
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

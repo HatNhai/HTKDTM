@@ -6,34 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+  --primary-dark: #1f2937;
+  --bg-light: #f8fafc;
+}
+
+/* BODY + BACKGROUND */
+body {
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("/back/nha.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+/* OVERLAY giống hero */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+}
+
+/* LOGIN CARD */
+.login-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+/* TITLE */
+.login-card h4 {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #111827;
+}
+
+/* INPUT */
+.login-card .form-control {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: .95rem;
+}
+
+.login-card .form-control:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 2px rgba(31,41,55,.2);
+}
+
+/* BUTTON */
+.btn-login {
+  background: var(--primary-dark);
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.btn-login:hover {
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+/* LINK */
+.login-card a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.login-card a:hover {
+  color: #111827;
+}
+
+/* MESSAGE */
+#loginMsg {
+  font-size: .85rem;
+}
+</style>
 </head>
 
-<body class="d-flex align-items-center justify-content-center vh-100 bg-light">
+<body class="d-flex align-items-center justify-content-center">
 
-<div class="card shadow p-4" style="max-width:400px;width:100%;">
-  <h4 class="text-center mb-3 text-danger fw-bold">Đăng nhập SmartRent</h4>
+  <div class="login-card">
+    <h4 class="text-center mb-4">
+      Đăng nhập hệ thống 
+    </h4>
 
-  <input id="loginUser" class="form-control mb-3" placeholder="Tên đăng nhập">
-  <input id="loginPass" type="password" class="form-control mb-3" placeholder="Mật khẩu">
+    <input id="loginUser" class="form-control mb-3" placeholder="Tên đăng nhập">
+    <input id="loginPass" type="password" class="form-control mb-3" placeholder="Mật khẩu">
 
-  <button id="loginSubmit" class="btn btn-danger w-100 mb-2">Đăng nhập</button>
+    <button id="loginSubmit" class="btn-login w-100 mb-3">
+      Đăng nhập
+    </button>
 
-  <a href="./register.html" class="text-center d-block small text-muted">Chưa có tài khoản? Đăng ký</a>
+    <a href="./register.html" class="d-block text-center small">
+      Chưa có tài khoản? Đăng ký
+    </a>
 
-  <p id="loginMsg" class="text-center mt-2 small text-danger"></p>
-</div>
+    <p id="loginMsg" class="text-center mt-3"></p>
+  </div>
 
 <script type="module">
   import { auth, db } from "../js/firebase-config.js";
   import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
   import { ref, get } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
 
-  document.getElementById("loginSubmit").addEventListener("click", async () => {
-    const username = loginUser.value.trim();
-    const password = loginPass.value.trim();
-    const msg = document.getElementById("loginMsg");
+  const loginBtn = document.getElementById("loginSubmit");
+  const msg = document.getElementById("loginMsg");
 
-    msg.classList.remove("text-danger", "text-success");
+  loginBtn.addEventListener("click", async () => {
+    const username = document.getElementById("loginUser").value.trim();
+    const password = document.getElementById("loginPass").value.trim();
+
+    msg.className = "text-center mt-3";
     msg.textContent = "";
 
     if (!username || !password) {
@@ -43,42 +135,40 @@
     }
 
     try {
-      // 🔹 Chỉ ghép @ nếu chưa có
-      let email = username;
-      if (!email.includes("@")) {
-        email = email + "@smartrent.local";
-      }
+      const email = username.includes("@")
+        ? username
+        : `${username}@smartrent.local`;
 
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      const uid = userCredential.user.uid;
+      await signInWithEmailAndPassword(auth, email, password);
 
-      const snapshot = await get(ref(db, `users/${uid}`));
-      const userData = snapshot.val() || {};
+      const snapshot = await get(ref(db, `users/${username}`));
+      if (!snapshot.exists()) throw new Error("User không tồn tại");
 
-      // Lưu user
+      const userData = snapshot.val();
+
       localStorage.setItem("currentUser", JSON.stringify({
-        uid,
+        username,
         email,
+        favorites: userData.favorites || [],
         role: userData.role || "user"
       }));
 
-      // ✅ Thông báo thành công
       msg.classList.add("text-success");
-      msg.textContent = "Đăng nhập thành công! Đang chuyển về trang chủ...";
+      msg.textContent = "Đăng nhập thành công!";
 
-      // ⏳ Chờ 1.2s rồi chuyển trang
       setTimeout(() => {
-        window.location.href = "../index.html";
-      }, 1200);
+        window.location.href =
+          userData.role === "admin"
+            ? "../admin/index.html"
+            : "../index.html";
+      }, 900);
 
     } catch (err) {
       msg.classList.add("text-danger");
       msg.textContent = "Sai tài khoản hoặc mật khẩu!";
-      console.error(err);
     }
   });
 </script>
-
 
 </body>
 </html>

@@ -2,68 +2,183 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Đăng ký</title>
+  <title>Đăng ký - SmartRent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+:root {
+  --primary-dark: #1f2937;
+}
+
+/* BODY + BACKGROUND */
+body {
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("/back/nha.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+/* OVERLAY */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+}
+
+/* CARD */
+.register-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+/* TITLE */
+.register-card h4 {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #111827;
+}
+
+/* INPUT + SELECT */
+.register-card .form-control,
+.register-card .form-select {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: .95rem;
+}
+
+.register-card .form-control:focus,
+.register-card .form-select:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 2px rgba(31,41,55,.2);
+}
+
+/* BUTTON */
+.btn-register {
+  background: var(--primary-dark);
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.btn-register:hover {
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+/* LINK */
+.register-card a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.register-card a:hover {
+  color: #111827;
+}
+
+/* MESSAGE */
+#msg {
+  font-size: .85rem;
+}
+</style>
 </head>
 
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+<body class="d-flex justify-content-center align-items-center">
 
-<div class="card p-4 shadow" style="width:400px">
-  <h4 class="text-center text-danger mb-3">Đăng ký</h4>
+  <div class="register-card">
+    <h4 class="text-center mb-4">
+      Đăng ký tài khoản
+    </h4>
 
-  <input id="regUser" class="form-control mb-3" placeholder="Tên đăng nhập">
-  <input id="regPass" type="password" class="form-control mb-3" placeholder="Mật khẩu (>=6 ký tự)">
+    <input id="regUser" class="form-control mb-3" placeholder="Tên đăng nhập">
+    <input id="regPass" type="password" class="form-control mb-3" placeholder="Mật khẩu (≥ 6 ký tự)">
 
-  <select id="regRole" class="form-select mb-3">
-    <option value="renter">Người thuê</option>
-    <option value="owner">Chủ cho thuê</option>
-  </select>
+    <select id="regRole" class="form-select mb-3">
+      <option value="renter">Người thuê</option>
+      <option value="owner">Chủ cho thuê</option>
+    </select>
 
-  <button id="registerBtn" class="btn btn-danger w-100">Đăng ký</button>
+    <button id="registerBtn" class="btn-register w-100 mb-2">
+      Đăng ký
+    </button>
 
-  <p id="msg" class="text-center mt-2 small"></p>
-  <a href="./login.html" class="d-block text-center small mt-2">Đã có tài khoản? Đăng nhập</a>
-</div>
+    <p id="msg" class="text-center mt-2"></p>
+
+    <a href="./login.html" class="d-block text-center small mt-2">
+      Đã có tài khoản? Đăng nhập
+    </a>
+  </div>
 
 <script type="module">
   import { auth, db } from "../js/firebase-config.js";
-  import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
-  import { ref, set } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
+  import { createUserWithEmailAndPassword } from
+    "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+  import { ref, set, get } from
+    "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
 
-  registerBtn.onclick = async () => {
-    const username = regUser.value.trim();
-    const password = regPass.value.trim();
-    const role = regRole.value;
-    const msg = document.getElementById("msg");
+  const btn = document.getElementById("registerBtn");
+  const msg = document.getElementById("msg");
+
+  btn.addEventListener("click", async () => {
+    const username = document.getElementById("regUser").value.trim();
+    const password = document.getElementById("regPass").value.trim();
+    const role = document.getElementById("regRole").value;
+
+    msg.className = "text-center mt-2";
+    msg.textContent = "";
 
     if (!username || password.length < 6) {
-      msg.textContent = "Nhập đủ thông tin, mật khẩu ≥ 6 ký tự";
-      msg.className = "text-danger text-center small";
+      msg.classList.add("text-danger");
+      msg.textContent = "Tên đăng nhập & mật khẩu ≥ 6 ký tự";
       return;
     }
 
     try {
-      const email = `${username}@smartrent.local`;
-      const cred = await createUserWithEmailAndPassword(auth, email, password);
+      const userRef = ref(db, `users/${username}`);
+      const snap = await get(userRef);
+      if (snap.exists()) {
+        msg.classList.add("text-danger");
+        msg.textContent = "Username đã tồn tại!";
+        return;
+      }
 
-      await set(ref(db, "users/" + cred.user.uid), {
+      const email = `${username}@smartrent.local`;
+      await createUserWithEmailAndPassword(auth, email, password);
+
+      await set(userRef, {
         username,
+        email,
         role,
-        createdAt: Date.now()
+        createdAt: Date.now(),
+        posted: {}
       });
 
-      msg.textContent = "Đăng ký thành công! Chuyển sang đăng nhập...";
-      msg.className = "text-success text-center small";
+      msg.classList.add("text-success");
+      msg.textContent = "Đăng ký thành công!";
 
       setTimeout(() => {
         window.location.href = "./login.html";
-      }, 1500);
+      }, 900);
 
-    } catch (e) {
-      msg.textContent = e.code;
-      msg.className = "text-danger text-center small";
+    } catch (err) {
+      console.error(err);
+      msg.classList.add("text-danger");
+      msg.textContent =
+        err.code === "auth/email-already-in-use"
+          ? "Username đã tồn tại!"
+          : "Đăng ký thất bại!";
     }
-  };
+  });
 </script>
 
 </body>

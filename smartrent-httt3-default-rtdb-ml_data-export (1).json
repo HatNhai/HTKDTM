@@ -1,0 +1,166 @@
+{
+  "demand_data": {
+    "d1": {
+      "area": 80,
+      "demand_level": 2,
+      "district_code": 1,
+      "month": 6,
+      "price": 12000000,
+      "type_code": 1
+    },
+    "d10": {
+      "area": 110,
+      "demand_level": 1,
+      "district_code": 10,
+      "month": 12,
+      "price": 14000000,
+      "type_code": 1
+    },
+    "d2": {
+      "area": 60,
+      "demand_level": 2,
+      "district_code": 2,
+      "month": 5,
+      "price": 9000000,
+      "type_code": 2
+    },
+    "d3": {
+      "area": 100,
+      "demand_level": 3,
+      "district_code": 3,
+      "month": 7,
+      "price": 18000000,
+      "type_code": 1
+    },
+    "d4": {
+      "area": 45,
+      "demand_level": 2,
+      "district_code": 4,
+      "month": 3,
+      "price": 7000000,
+      "type_code": 2
+    },
+    "d5": {
+      "area": 90,
+      "demand_level": 3,
+      "district_code": 5,
+      "month": 8,
+      "price": 15000000,
+      "type_code": 1
+    },
+    "d6": {
+      "area": 70,
+      "demand_level": 2,
+      "district_code": 6,
+      "month": 4,
+      "price": 10000000,
+      "type_code": 1
+    },
+    "d7": {
+      "area": 120,
+      "demand_level": 3,
+      "district_code": 7,
+      "month": 9,
+      "price": 22000000,
+      "type_code": 1
+    },
+    "d8": {
+      "area": 50,
+      "demand_level": 1,
+      "district_code": 8,
+      "month": 2,
+      "price": 6500000,
+      "type_code": 2
+    },
+    "d9": {
+      "area": 85,
+      "demand_level": 2,
+      "district_code": 9,
+      "month": 10,
+      "price": 11000000,
+      "type_code": 1
+    }
+  },
+  "price_data": {
+    "p1": {
+      "area": 100,
+      "district_code": 2,
+      "furnished": 1,
+      "price": 15000000,
+      "rooms": 3,
+      "type_code": 2
+    },
+    "p10": {
+      "area": 110,
+      "district_code": 10,
+      "furnished": 0,
+      "price": 14000000,
+      "rooms": 3,
+      "type_code": 1
+    },
+    "p2": {
+      "area": 80,
+      "district_code": 2,
+      "furnished": 1,
+      "price": 12000000,
+      "rooms": 2,
+      "type_code": 2
+    },
+    "p3": {
+      "area": 60,
+      "district_code": 3,
+      "furnished": 1,
+      "price": 18000000,
+      "rooms": 3,
+      "type_code": 1
+    },
+    "p4": {
+      "area": 45,
+      "district_code": 4,
+      "furnished": 0,
+      "price": 7000000,
+      "rooms": 1,
+      "type_code": 2
+    },
+    "p5": {
+      "area": 90,
+      "district_code": 5,
+      "furnished": 1,
+      "price": 15000000,
+      "rooms": 3,
+      "type_code": 1
+    },
+    "p6": {
+      "area": 70,
+      "district_code": 6,
+      "furnished": 0,
+      "price": 10000000,
+      "rooms": 2,
+      "type_code": 1
+    },
+    "p7": {
+      "area": 120,
+      "district_code": 7,
+      "furnished": 1,
+      "price": 22000000,
+      "rooms": 3,
+      "type_code": 1
+    },
+    "p8": {
+      "area": 50,
+      "district_code": 8,
+      "furnished": 0,
+      "price": 6500000,
+      "rooms": 1,
+      "type_code": 2
+    },
+    "p9": {
+      "area": 85,
+      "district_code": 9,
+      "furnished": 1,
+      "price": 11000000,
+      "rooms": 2,
+      "type_code": 1
+    }
+  }
+}

@@ -1,0 +1,2448 @@
+{
+  "list": {
+    "id_1": {
+      "id": "id_1",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 7000000,
+      "priceText": "7 triệu/tháng",
+      "area": 61,
+      "areaText": "61 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0999622489",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.3,
+      "reviewCount": 0,
+      "createdAt": 1768231782380
+    },
+    "id_2": {
+      "id": "id_2",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 9000000,
+      "priceText": "9 triệu/tháng",
+      "area": 54,
+      "areaText": "54 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Cầu Giấy",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0979127777",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Cửa hàng kinh doanh",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.9,
+      "reviewCount": 1,
+      "createdAt": 1768227173632
+    },
+    "id_3": {
+      "id": "id_3",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 27,
+      "areaText": "27 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Tây Hồ",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0924191948",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.4,
+      "reviewCount": 0,
+      "createdAt": 1768227887159
+    },
+    "id_4": {
+      "id": "id_4",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 12000000,
+      "priceText": "12 triệu/tháng",
+      "area": 72,
+      "areaText": "72 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Không chung chủ, giờ giấc tự do, có thang máy và camera an ninh.",
+      "contact": {
+        "phone": "0957472051",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 3.2,
+      "reviewCount": 1,
+      "createdAt": 1768228081322
+    },
+    "id_5": {
+      "id": "id_5",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 43,
+      "areaText": "43 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0911945244",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.6,
+      "reviewCount": 0,
+      "createdAt": 1768227103747
+    },
+    "id_6": {
+      "id": "id_6",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 12000000,
+      "priceText": "12 triệu/tháng",
+      "area": 50,
+      "areaText": "50 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0981510100",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.1,
+      "reviewCount": 0,
+      "createdAt": 1768228992384
+    },
+    "id_7": {
+      "id": "id_7",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 71,
+      "areaText": "71 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0955337365",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.5,
+      "reviewCount": 2,
+      "createdAt": 1768229803988
+    },
+    "id_8": {
+      "id": "id_8",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 12000000,
+      "priceText": "12 triệu/tháng",
+      "area": 50,
+      "areaText": "50 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Tây Hồ",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0932582667",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.4,
+      "reviewCount": 1,
+      "createdAt": 1768231143940
+    },
+    "id_9": {
+      "id": "id_9",
+      "title": "Nhà hàng sang trọng, sẵn nội thất bếp",
+      "price": 7000000,
+      "priceText": "7 triệu/tháng",
+      "area": 80,
+      "areaText": "80 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Bắc Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Không chung chủ, giờ giấc tự do, có thang máy và camera an ninh.",
+      "contact": {
+        "phone": "0974609426",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.7,
+      "reviewCount": 1,
+      "createdAt": 1768231080451
+    },
+    "id_10": {
+      "id": "id_10",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 10000000,
+      "priceText": "10 triệu/tháng",
+      "area": 54,
+      "areaText": "54 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0948920111",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.9,
+      "reviewCount": 1,
+      "createdAt": 1768227924523
+    },
+    "id_11": {
+      "id": "id_11",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 25,
+      "areaText": "25 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Cầu Giấy",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0940897994",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.0,
+      "reviewCount": 0,
+      "createdAt": 1768230607331
+    },
+    "id_12": {
+      "id": "id_12",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 9000000,
+      "priceText": "9 triệu/tháng",
+      "area": 49,
+      "areaText": "49 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Long Biên",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0948867518",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.0,
+      "reviewCount": 0,
+      "createdAt": 1768227272326
+    },
+    "id_13": {
+      "id": "id_13",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 56,
+      "areaText": "56 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0914574341",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.3,
+      "reviewCount": 0,
+      "createdAt": 1768227584337
+    },
+    "id_14": {
+      "id": "id_14",
+      "title": "Văn phòng chia sẻ hiện đại",
+      "price": 5000000,
+      "priceText": "5 triệu/tháng",
+      "area": 35,
+      "areaText": "35 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Đống Đa",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0962682093",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.6,
+      "reviewCount": 0,
+      "createdAt": 1768230412632
+    },
+    "id_15": {
+      "id": "id_15",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 31,
+      "areaText": "31 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Đống Đa",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0914173407",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.7,
+      "reviewCount": 0,
+      "createdAt": 1768230132979
+    },
+    "id_16": {
+      "id": "id_16",
+      "title": "Nhà hàng sang trọng, sẵn nội thất bếp",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 21,
+      "areaText": "21 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0950311151",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.0,
+      "reviewCount": 0,
+      "createdAt": 1768228537503
+    },
+    "id_17": {
+      "id": "id_17",
+      "title": "Phòng studio gần trường đại học",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 29,
+      "areaText": "29 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0956699658",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.5,
+      "reviewCount": 0,
+      "createdAt": 1768231247637
+    },
+    "id_18": {
+      "id": "id_18",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 65,
+      "areaText": "65 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0914199041",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.3,
+      "reviewCount": 0,
+      "createdAt": 1768228450487
+    },
+    "id_19": {
+      "id": "id_19",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 38,
+      "areaText": "38 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Hai Bà Trưng",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0973977604",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768228539016
+    },
+    "id_20": {
+      "id": "id_20",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 25,
+      "areaText": "25 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Tây Hồ",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0937093992",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 4.3,
+      "reviewCount": 1,
+      "createdAt": 1768230945783
+    },
+    "id_21": {
+      "id": "id_21",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 5000000,
+      "priceText": "5 triệu/tháng",
+      "area": 23,
+      "areaText": "23 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0949691532",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.7,
+      "reviewCount": 0,
+      "createdAt": 1768228942671
+    },
+    "id_22": {
+      "id": "id_22",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 41,
+      "areaText": "41 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Hà Đông",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0919344941",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.5,
+      "reviewCount": 0,
+      "createdAt": 1768230620573
+    },
+    "id_23": {
+      "id": "id_23",
+      "title": "Nhà hàng sang trọng, sẵn nội thất bếp",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 41,
+      "areaText": "41 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Hai Bà Trưng",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0945461177",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 4.0,
+      "reviewCount": 1,
+      "createdAt": 1768228521615
+    },
+    "id_24": {
+      "id": "id_24",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 42,
+      "areaText": "42 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Hai Bà Trưng",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0994541170",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.5,
+      "reviewCount": 0,
+      "createdAt": 1768229107277
+    },
+    "id_25": {
+      "id": "id_25",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 9000000,
+      "priceText": "9 triệu/tháng",
+      "area": 51,
+      "areaText": "51 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Tây Hồ",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0953709932",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 5.0,
+      "reviewCount": 0,
+      "createdAt": 1768230524829
+    },
+    "id_26": {
+      "id": "id_26",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 54,
+      "areaText": "54 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Hà Đông",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0921681311",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.5,
+      "reviewCount": 1,
+      "createdAt": 1768229575710
+    },
+    "id_27": {
+      "id": "id_27",
+      "title": "Phòng studio gần trường đại học",
+      "price": 4000000,
+      "priceText": "4 triệu/tháng",
+      "area": 59,
+      "areaText": "59 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0934438815",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.5,
+      "reviewCount": 1,
+      "createdAt": 1768231116158
+    },
+    "id_28": {
+      "id": "id_28",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 4000000,
+      "priceText": "4 triệu/tháng",
+      "area": 30,
+      "areaText": "30 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0944613683",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.4,
+      "reviewCount": 1,
+      "createdAt": 1768230109094
+    },
+    "id_29": {
+      "id": "id_29",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 69,
+      "areaText": "69 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Hà Đông",
+        "city": "Hà Nội"
+      },
+      "description": "Không chung chủ, giờ giấc tự do, có thang máy và camera an ninh.",
+      "contact": {
+        "phone": "0944200525",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.0,
+      "reviewCount": 1,
+      "createdAt": 1768228270980
+    },
+    "id_30": {
+      "id": "id_30",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 14000000,
+      "priceText": "14 triệu/tháng",
+      "area": 69,
+      "areaText": "69 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0943212186",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Cửa hàng kinh doanh",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.1,
+      "reviewCount": 0,
+      "createdAt": 1768230440415
+    },
+    "id_31": {
+      "id": "id_31",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 7000000,
+      "priceText": "7 triệu/tháng",
+      "area": 70,
+      "areaText": "70 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0917307273",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.3,
+      "reviewCount": 0,
+      "createdAt": 1768227322608
+    },
+    "id_32": {
+      "id": "id_32",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 10000000,
+      "priceText": "10 triệu/tháng",
+      "area": 70,
+      "areaText": "70 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0955451395",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.3,
+      "reviewCount": 0,
+      "createdAt": 1768231784035
+    },
+    "id_33": {
+      "id": "id_33",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 49,
+      "areaText": "49 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Cầu Giấy",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0976059729",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.7,
+      "reviewCount": 0,
+      "createdAt": 1768227318521
+    },
+    "id_34": {
+      "id": "id_34",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 76,
+      "areaText": "76 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0929448612",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.1,
+      "reviewCount": 0,
+      "createdAt": 1768230058839
+    },
+    "id_35": {
+      "id": "id_35",
+      "title": "Nhà hàng sang trọng, sẵn nội thất bếp",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 39,
+      "areaText": "39 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0966567700",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.2,
+      "reviewCount": 2,
+      "createdAt": 1768230368953
+    },
+    "id_36": {
+      "id": "id_36",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 4000000,
+      "priceText": "4 triệu/tháng",
+      "area": 68,
+      "areaText": "68 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0980949151",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.1,
+      "reviewCount": 0,
+      "createdAt": 1768231738935
+    },
+    "id_37": {
+      "id": "id_37",
+      "title": "Phòng studio gần trường đại học",
+      "price": 10000000,
+      "priceText": "10 triệu/tháng",
+      "area": 49,
+      "areaText": "49 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Long Biên",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0960207800",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.5,
+      "reviewCount": 0,
+      "createdAt": 1768230751180
+    },
+    "id_38": {
+      "id": "id_38",
+      "title": "Phòng studio gần trường đại học",
+      "price": 5000000,
+      "priceText": "5 triệu/tháng",
+      "area": 67,
+      "areaText": "67 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Đống Đa",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0994916471",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.2,
+      "reviewCount": 0,
+      "createdAt": 1768227758362
+    },
+    "id_39": {
+      "id": "id_39",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 14000000,
+      "priceText": "14 triệu/tháng",
+      "area": 67,
+      "areaText": "67 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0981990981",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.7,
+      "reviewCount": 1,
+      "createdAt": 1768227467215
+    },
+    "id_40": {
+      "id": "id_40",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 42,
+      "areaText": "42 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0987586039",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.5,
+      "reviewCount": 0,
+      "createdAt": 1768231645045
+    },
+    "id_41": {
+      "id": "id_41",
+      "title": "Văn phòng chia sẻ hiện đại",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 48,
+      "areaText": "48 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0951939605",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.7,
+      "reviewCount": 1,
+      "createdAt": 1768229477551
+    },
+    "id_42": {
+      "id": "id_42",
+      "title": "Phòng studio gần trường đại học",
+      "price": 5000000,
+      "priceText": "5 triệu/tháng",
+      "area": 60,
+      "areaText": "60 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0984301252",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.1,
+      "reviewCount": 0,
+      "createdAt": 1768231397397
+    },
+    "id_43": {
+      "id": "id_43",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 61,
+      "areaText": "61 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0963884484",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.5,
+      "reviewCount": 0,
+      "createdAt": 1768228622533
+    },
+    "id_44": {
+      "id": "id_44",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 7000000,
+      "priceText": "7 triệu/tháng",
+      "area": 32,
+      "areaText": "32 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0932378669",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.3,
+      "reviewCount": 1,
+      "createdAt": 1768228541470
+    },
+    "id_45": {
+      "id": "id_45",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 41,
+      "areaText": "41 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Hà Đông",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0983289901",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.6,
+      "reviewCount": 1,
+      "createdAt": 1768231118140
+    },
+    "id_46": {
+      "id": "id_46",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 39,
+      "areaText": "39 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0978931065",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.6,
+      "reviewCount": 1,
+      "createdAt": 1768228241022
+    },
+    "id_47": {
+      "id": "id_47",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 46,
+      "areaText": "46 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Long Biên",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0946054864",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.2,
+      "reviewCount": 1,
+      "createdAt": 1768228331940
+    },
+    "id_48": {
+      "id": "id_48",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 14000000,
+      "priceText": "14 triệu/tháng",
+      "area": 34,
+      "areaText": "34 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0973585380",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.2,
+      "reviewCount": 0,
+      "createdAt": 1768227808377
+    },
+    "id_49": {
+      "id": "id_49",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 14000000,
+      "priceText": "14 triệu/tháng",
+      "area": 36,
+      "areaText": "36 m²",
+      "address": {
+        "ward": "Phường Trung Liệt",
+        "district": "Quận Long Biên",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0979859788",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 4.6,
+      "reviewCount": 1,
+      "createdAt": 1768228267221
+    },
+    "id_50": {
+      "id": "id_50",
+      "title": "Cho thuê văn phòng nhỏ tiện nghi",
+      "price": 14000000,
+      "priceText": "14 triệu/tháng",
+      "area": 68,
+      "areaText": "68 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0933849421",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 3.4,
+      "reviewCount": 0,
+      "createdAt": 1768229630499
+    },
+    "id_51": {
+      "id": "id_51",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 59,
+      "areaText": "59 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Thanh Xuân",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0980213638",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768230053345
+    },
+    "id_52": {
+      "id": "id_52",
+      "title": "Phòng studio gần trường đại học",
+      "price": 9000000,
+      "priceText": "9 triệu/tháng",
+      "area": 40,
+      "areaText": "40 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Không chung chủ, giờ giấc tự do, có thang máy và camera an ninh.",
+      "contact": {
+        "phone": "0995887062",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Văn Phòng",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.4,
+      "reviewCount": 1,
+      "createdAt": 1768230645189
+    },
+    "id_53": {
+      "id": "id_53",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 13000000,
+      "priceText": "13 triệu/tháng",
+      "area": 47,
+      "areaText": "47 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0924061635",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Cửa hàng kinh doanh",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.7,
+      "reviewCount": 0,
+      "createdAt": 1768227675528
+    },
+    "id_54": {
+      "id": "id_54",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 5000000,
+      "priceText": "5 triệu/tháng",
+      "area": 60,
+      "areaText": "60 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0983441426",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.6,
+      "reviewCount": 0,
+      "createdAt": 1768230949157
+    },
+    "id_55": {
+      "id": "id_55",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 13000000,
+      "priceText": "13 triệu/tháng",
+      "area": 28,
+      "areaText": "28 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0945410372",
+        "owner": "Nhai"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768226971449
+    },
+    "id_56": {
+      "id": "id_56",
+      "title": "Phòng studio gần trường đại học",
+      "price": 10000000,
+      "priceText": "10 triệu/tháng",
+      "area": 51,
+      "areaText": "51 m²",
+      "address": {
+        "ward": "Phường Tràng Tiền",
+        "district": "Quận Hai Bà Trưng",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0945442187",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 3.7,
+      "reviewCount": 1,
+      "createdAt": 1768228478630
+    },
+    "id_57": {
+      "id": "id_57",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 3000000,
+      "priceText": "3 triệu/tháng",
+      "area": 44,
+      "areaText": "44 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Cầu Giấy",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0964835857",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Studio",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 3.3,
+      "reviewCount": 1,
+      "createdAt": 1768230054330
+    },
+    "id_58": {
+      "id": "id_58",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 28,
+      "areaText": "28 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0942281885",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Phòng Trọ",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.9,
+      "reviewCount": 0,
+      "createdAt": 1768230903168
+    },
+    "id_59": {
+      "id": "id_59",
+      "title": "Nhà hàng sang trọng, sẵn nội thất bếp",
+      "price": 15000000,
+      "priceText": "15 triệu/tháng",
+      "area": 63,
+      "areaText": "63 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Bắc Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Không chung chủ, giờ giấc tự do, có thang máy và camera an ninh.",
+      "contact": {
+        "phone": "0980289549",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768228505059
+    },
+    "id_60": {
+      "id": "id_60",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 7000000,
+      "priceText": "7 triệu/tháng",
+      "area": 73,
+      "areaText": "73 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0933719485",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.4,
+      "reviewCount": 0,
+      "createdAt": 1768227159720
+    },
+    "id_61": {
+      "id": "id_61",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 77,
+      "areaText": "77 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Ba Đình",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0947936779",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768228268278
+    },
+    "id_62": {
+      "id": "id_62",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 9000000,
+      "priceText": "9 triệu/tháng",
+      "area": 67,
+      "areaText": "67 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0933630526",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": true,
+        "balcony": true
+      },
+      "rating": 3.3,
+      "reviewCount": 0,
+      "createdAt": 1768229127818
+    },
+    "id_63": {
+      "id": "id_63",
+      "title": "Căn hộ mini gần Times City, có ban công rộng",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 49,
+      "areaText": "49 m²",
+      "address": {
+        "ward": "Phường Dịch Vọng",
+        "district": "Quận Hà Đông",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0974117822",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Cafe",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.7,
+      "reviewCount": 2,
+      "createdAt": 1768228616385
+    },
+    "id_64": {
+      "id": "id_64",
+      "title": "Shop mặt đường đông người qua lại",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 58,
+      "areaText": "58 m²",
+      "address": {
+        "ward": "Phường Kim Liên",
+        "district": "Quận Đống Đa",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0956043112",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 4.8,
+      "reviewCount": 0,
+      "createdAt": 1768230889654
+    },
+    "id_65": {
+      "id": "id_65",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 6000000,
+      "priceText": "6 triệu/tháng",
+      "area": 63,
+      "areaText": "63 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      "description": "Phòng sạch sẽ, an ninh đảm bảo, gần chợ và trường học.",
+      "contact": {
+        "phone": "0952787741",
+        "owner": "NguyenVanA"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 3.1,
+      "reviewCount": 0,
+      "createdAt": 1768230325349
+    },
+    "id_66": {
+      "id": "id_66",
+      "title": "Phòng studio gần trường đại học",
+      "price": 11000000,
+      "priceText": "11 triệu/tháng",
+      "area": 53,
+      "areaText": "53 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Bắc Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0987388096",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": true,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.4,
+      "reviewCount": 0,
+      "createdAt": 1768228978510
+    },
+    "id_67": {
+      "id": "id_67",
+      "title": "Căn hộ dịch vụ cao cấp",
+      "price": 13000000,
+      "priceText": "13 triệu/tháng",
+      "area": 47,
+      "areaText": "47 m²",
+      "address": {
+        "ward": "Phường Bồ Đề",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Căn hộ mới, đầy đủ tiện nghi, ban công view thoáng.",
+      "contact": {
+        "phone": "0968625358",
+        "owner": "ThuThuy"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.5,
+      "reviewCount": 0,
+      "createdAt": 1768231682497
+    },
+    "id_68": {
+      "id": "id_68",
+      "title": "Cafe góc phố đẹp, view hồ",
+      "price": 12000000,
+      "priceText": "12 triệu/tháng",
+      "area": 31,
+      "areaText": "31 m²",
+      "address": {
+        "ward": "Phường Mễ Trì",
+        "district": "Quận Nam Từ Liêm",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0910979887",
+        "owner": "Tham"
+      },
+      "imageURL": "",
+      "businessType": "Homestay",
+      "features": {
+        "wifi": true,
+        "parking": true,
+        "airConditioner": true,
+        "kitchen": true,
+        "balcony": false
+      },
+      "rating": 4.1,
+      "reviewCount": 0,
+      "createdAt": 1768229518867
+    },
+    "id_69": {
+      "id": "id_69",
+      "title": "Homestay trung tâm Hà Nội, đầy đủ nội thất",
+      "price": 12000000,
+      "priceText": "12 triệu/tháng",
+      "area": 56,
+      "areaText": "56 m²",
+      "address": {
+        "ward": "Phường Phú Diễn",
+        "district": "Quận Cầu Giấy",
+        "city": "Hà Nội"
+      },
+      "description": "Vị trí đắc địa, thuận tiện di chuyển, có chỗ để xe.",
+      "contact": {
+        "phone": "0968374636",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Căn hộ dịch vụ",
+      "features": {
+        "wifi": true,
+        "parking": false,
+        "airConditioner": false,
+        "kitchen": false,
+        "balcony": false
+      },
+      "rating": 3.6,
+      "reviewCount": 0,
+      "createdAt": 1768228523428
+    },
+    "id_70": {
+      "id": "id_70",
+      "title": "Phòng trọ giá rẻ, an ninh tốt",
+      "price": 8000000,
+      "priceText": "8 triệu/tháng",
+      "area": 36,
+      "areaText": "36 m²",
+      "address": {
+        "ward": "Phường Phương Liệt",
+        "district": "Quận Đống Đa",
+        "city": "Hà Nội"
+      },
+      "description": "Giá cả hợp lý, nội thất cao cấp, phù hợp sinh viên và nhân viên văn phòng.",
+      "contact": {
+        "phone": "0995127000",
+        "owner": "Huyen"
+      },
+      "imageURL": "",
+      "businessType": "Nhà hàng",
+      "features": {
+        "wifi": false,
+        "parking": false,
+        "airConditioner": true,
+        "kitchen": false,
+        "balcony": true
+      },
+      "rating": 4.5,
+      "reviewCount": 3,
+      "createdAt": 1768227421445
+    }
+  },
+  "reviews": {
+    "id_57": {
+      "-Od21056": {
+        "name": "ThuThuy",
+        "rating": 1,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_47": {
+      "-Od77909": {
+        "name": "Huyen",
+        "rating": 3,
+        "text": "Phòng sạch đẹp",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_70": {
+      "-Od60872": {
+        "name": "NguyenVanA",
+        "rating": 3,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      },
+      "-Od48707": {
+        "name": "Nhai",
+        "rating": 3,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      },
+      "-Od67824": {
+        "name": "ThuThuy",
+        "rating": 2,
+        "text": "Phòng sạch đẹp",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_52": {
+      "-Od76644": {
+        "name": "ThuThuy",
+        "rating": 4,
+        "text": "Tệ",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_23": {
+      "-Od20423": {
+        "name": "Tham",
+        "rating": 5,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_9": {
+      "-Od66514": {
+        "name": "NguyenVanA",
+        "rating": 1,
+        "text": "Tốt",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_4": {
+      "-Od53410": {
+        "name": "NguyenVanA",
+        "rating": 2,
+        "text": "Tốt",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_7": {
+      "-Od26198": {
+        "name": "Huyen",
+        "rating": 5,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      },
+      "-Od96767": {
+        "name": "Nhai",
+        "rating": 5,
+        "text": "Tốt",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_29": {
+      "-Od29241": {
+        "name": "Tham",
+        "rating": 3,
+        "text": "Tốt",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_28": {
+      "-Od88699": {
+        "name": "ThuThuy",
+        "rating": 1,
+        "text": "Phòng sạch đẹp",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_26": {
+      "-Od25774": {
+        "name": "Huyen",
+        "rating": 1,
+        "text": "Tệ",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_56": {
+      "-Od67241": {
+        "name": "Huyen",
+        "rating": 1,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_41": {
+      "-Od13131": {
+        "name": "NguyenVanA",
+        "rating": 2,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_20": {
+      "-Od19076": {
+        "name": "ThuThuy",
+        "rating": 1,
+        "text": "Tệ",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_46": {
+      "-Od36759": {
+        "name": "ThuThuy",
+        "rating": 1,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_44": {
+      "-Od62835": {
+        "name": "Nhai",
+        "rating": 3,
+        "text": "Không đáng tiền",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_10": {
+      "-Od74097": {
+        "name": "Nhai",
+        "rating": 1,
+        "text": "Phòng sạch đẹp",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_63": {
+      "-Od39093": {
+        "name": "NguyenVanA",
+        "rating": 1,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      },
+      "-Od44688": {
+        "name": "Huyen",
+        "rating": 4,
+        "text": "Tệ",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_8": {
+      "-Od22431": {
+        "name": "Tham",
+        "rating": 4,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_49": {
+      "-Od31068": {
+        "name": "Tham",
+        "rating": 3,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_2": {
+      "-Od96237": {
+        "name": "Nhai",
+        "rating": 4,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_39": {
+      "-Od53861": {
+        "name": "Huyen",
+        "rating": 1,
+        "text": "Tốt",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_35": {
+      "-Od34799": {
+        "name": "Huyen",
+        "rating": 2,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      },
+      "-Od32776": {
+        "name": "Huyen",
+        "rating": 1,
+        "text": "Dịch vụ ổn",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_27": {
+      "-Od86856": {
+        "name": "NguyenVanA",
+        "rating": 1,
+        "text": "Rất hài lòng",
+        "timestamp": 1768231892642
+      }
+    },
+    "id_45": {
+      "-Od93375": {
+        "name": "ThuThuy",
+        "rating": 4,
+        "text": "Phòng sạch đẹp",
+        "timestamp": 1768231892642
+      }
+    }
+  },
+  "users": {
+    "ThuThuy": {
+      "createdAt": 1762360159155,
+      "password": "123456",
+      "role": "renter",
+      "favorites": [],
+      "posted": [
+        "id_14",
+        "id_21",
+        "id_24",
+        "id_26",
+        "id_28",
+        "id_32",
+        "id_38",
+        "id_39",
+        "id_41",
+        "id_42",
+        "id_48",
+        "id_49",
+        "id_50",
+        "id_53",
+        "id_59",
+        "id_63",
+        "id_64",
+        "id_67"
+      ]
+    },
+    "Nhai": {
+      "createdAt": 1762348988258,
+      "password": "12345",
+      "role": "owner",
+      "favorites": [],
+      "posted": [
+        "id_1",
+        "id_4",
+        "id_9",
+        "id_15",
+        "id_16",
+        "id_19",
+        "id_25",
+        "id_36",
+        "id_43",
+        "id_55"
+      ]
+    },
+    "Tham": {
+      "createdAt": 1762347111607,
+      "password": "123456",
+      "role": "owner",
+      "favorites": [],
+      "posted": [
+        "id_2",
+        "id_5",
+        "id_11",
+        "id_18",
+        "id_20",
+        "id_22",
+        "id_29",
+        "id_30",
+        "id_31",
+        "id_37",
+        "id_44",
+        "id_52",
+        "id_57",
+        "id_61",
+        "id_66",
+        "id_68"
+      ]
+    },
+    "Huyen": {
+      "createdAt": 1762358661857,
+      "password": "12345",
+      "role": "renter",
+      "favorites": [],
+      "posted": [
+        "id_6",
+        "id_7",
+        "id_8",
+        "id_10",
+        "id_13",
+        "id_17",
+        "id_33",
+        "id_35",
+        "id_56",
+        "id_60",
+        "id_69",
+        "id_70"
+      ]
+    },
+    "NguyenVanA": {
+      "createdAt": 1762360115462,
+      "password": "123456",
+      "role": "renter",
+      "favorites": [],
+      "posted": [
+        "id_3",
+        "id_12",
+        "id_23",
+        "id_27",
+        "id_34",
+        "id_40",
+        "id_45",
+        "id_46",
+        "id_47",
+        "id_51",
+        "id_54",
+        "id_58",
+        "id_62",
+        "id_65"
+      ]
+    }
+  }
+}

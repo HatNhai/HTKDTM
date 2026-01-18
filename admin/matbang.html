@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Duyệt mặt bằng</title>
+
+  <style>
+    :root {
+  --bg-main: #f1f5f9;
+  --primary: #2563eb;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --warning: #facc15;
+  --text-main: #0f172a;
+  --text-sub: #64748b;
+  --card-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg-main);
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: 32px auto;
+  background: var(--card-bg);
+  padding: 28px 32px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ===== HEADER ===== */
+h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* ===== TOP ACTIONS ===== */
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-actions button {
+  min-width: 120px;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+thead {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+th {
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+td {
+  padding: 14px;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+tbody tr:hover {
+  background: #eef2ff;
+}
+
+/* ===== STATUS BADGE ===== */
+.status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn-approve {
+  background: var(--success);
+  color: white;
+}
+
+.btn-reject {
+  background: var(--danger);
+  color: white;
+}
+
+.btn-back {
+  background: #475569;
+  color: white;
+}
+
+.btn-logout {
+  background: #020617;
+  color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Danh sách mặt bằng</h2>
+
+  <div class="top-actions">
+    <button class="btn btn-back" onclick="goAdmin()"> Quay lại </button>
+    <button class="btn btn-logout" onclick="logout()">Đăng xuất</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tên mặt bằng</th>
+        <th>Giá</th>
+        <th>Trạng thái</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+</div>
+
+<!-- JS xử lý dữ liệu mặt bằng -->
+<script type="module" src="../js/matbang.js"></script>
+
+<!-- JS xử lý nút Admin + Logout -->
+<script type="module">
+  import { auth } from "../js/firebase-config.js";
+  import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+  window.goAdmin = function () {
+    window.location.href = "../admin/index.html";
+  };
+
+  window.logout = function () {
+    if (confirm("Bạn có chắc muốn đăng xuất không?")) {
+      signOut(auth).then(() => {
+        window.location.href = "../login.html";
+      });
+    }
+  };
+</script>
+
+</body>
+</html>

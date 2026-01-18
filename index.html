@@ -1,173 +1,710 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SmartRent | Hệ thống tìm kiếm mặt bằng thông minh</title>
 
-  <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    /* NAVBAR */
-    .navbar {
-      transition: all 0.3s ease;
-    }
 
-    .navbar.scrolled {
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
+<style>
+:root {
+  --primary: #2563eb;   /* blue-600 */
+  --primary-dark: #1e40af;
+  --bg-light: #f8fafc;
+}
 
-    /* HERO */
-    .hero-section {
-      min-height: 90vh;
-      background: linear-gradient(135deg, #dc3545, #b02a37);
-      padding-top: 100px;
-    }
+body {
+  background: var(--bg-light);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
-    .search-bar {
-      max-width: 520px;
-    }
+/* NAVBAR */
+.navbar {
+  backdrop-filter: blur(8px);
+}
 
-    /* SECTION TITLE */
-    h3, h4 {
-      letter-spacing: 0.5px;
-    }
+/* HERO */
+.hero-section {
+  min-height: 92vh;
+  background:
+    linear-gradient(120deg, rgba(37,99,235,.95), rgba(30,64,175,.95)),
+    url("/back/images.jpg") center/cover;
+  padding-top: 120px;
+}
 
-    /* FOOTER */
-    footer {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-  </style>
+.hero-section h1 {
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-section p {
+  max-width: 680px;
+  margin: auto;
+  opacity: .95;
+}
+
+/* SEARCH BAR */
+.search-box {
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  gap: 12px;
+  max-width: 720px;
+  margin: auto;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+  outline: none;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 0 3px rgba(255,255,255,.4);
+}
+
+.search-box button {
+  border-radius: 12px;
+  padding: 0 26px;
+  font-weight: 600;
+}
+
+/* FILTER CARD */
+.filter-card {
+  margin-top: 40px;
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.filter-card label {
+  font-size: .9rem;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+/* LISTING CARD (gợi ý dùng chung) */
+.card {
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  transition: all .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 40px rgba(0,0,0,.12);
+}
+
+/* FOOTER */
+footer {
+  font-size: .9rem;
+  opacity: .85;
+}
+
+/* ===== ROOT ===== */
+:root {
+  --text-main: #111827;
+  --text-sub: #6b7280;
+  --border-light: #e5e7eb;
+  --primary: #2563eb;
+}
+
+/* ===== NAVBAR ===== */
+.smart-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  padding: 14px 0;
+  transition: all .25s ease;
+}
+
+/* Khi scroll */
+.smart-navbar.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+/* BRAND */
+.smart-navbar .navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.3px;
+}
+
+/* NAV LINK */
+.smart-navbar .nav-link {
+  color: var(--text-sub);
+  font-weight: 500;
+  padding: 4px 0;
+  position: relative;
+}
+
+.smart-navbar .nav-link:hover {
+  color: var(--text-main);
+}
+
+/* ACTIVE – underline rất mảnh */
+.smart-navbar .nav-link.active {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.smart-navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* LOGIN BUTTON */
+.btn-nav {
+  border: 1px solid var(--border-light);
+  background: #fff;
+  color: var(--text-main);
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+
+.btn-nav:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* USER INFO */
+.user-info {
+  font-size: .9rem;
+  color: var(--text-main);
+}
+
+.user-info .user-name {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.user-info a {
+  color: var(--text-sub);
+  font-size: .85rem;
+  text-decoration: none;
+}
+
+.user-info a:hover {
+  color: #ef4444;
+}
+
+.smart-brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+}
+
+/* Nhấn từ khóa */
+.smart-brand span {
+  color: var(--primary);
+  font-weight: 800;
+  margin: 0 4px;
+}
+
+/* Hiệu ứng hover rất nhẹ */
+.smart-brand:hover {
+  color: #1f2937;
+}
+
+.smart-brand:hover span {
+  color: #1d4ed8;
+}
+
+/* HERO BACKGROUND */
+.hero-section {
+  min-height: 90vh;
+  background: url("/back/nha.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+/* TEXT */
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: #e5e7eb;
+}
+
+/* SEARCH BAR */
+.hero-search {
+  max-width: 520px;
+  display: flex;
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.hero-search input {
+  flex: 1;
+  border: none;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.hero-search button {
+  border: none;
+  background: #1f2937;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.hero-search button:hover {
+  background: #1d4ed8;
+}
+
+/* FILTER BOX */
+.hero-filter {
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.18);
+  text-align: left;
+}
+
+.hero-filter label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* ACTION BUTTONS */
+.filter-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #1f2937;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 10px;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+/* ===== AI PRICE PREDICTION ===== */
+.ai-price-section {
+  background: #f8fafc;
+}
+
+.ai-price-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 30px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.08);
+  max-width: 1100px;
+  margin: auto;
+}
+
+.ai-price-card h4 {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.ai-price-card input {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+}
+
+.ai-price-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+.ai-price-card button {
+  height: 100%;
+  border-radius: 12px;
+  font-weight: 600;
+  background: #1f2937;
+  border: none;
+  transition: all .2s ease;
+}
+
+.ai-price-card button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+#priceResult {
+  font-size: 1.05rem;
+}
+
+
+
+</style>
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<nav class="navbar navbar-expand-lg smart-navbar fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold text-danger fs-4" href="#">
-      Hệ thống tìm kiếm mặt bằng thông minh
-    </a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+    <button class="btn btn-nav" href="#" id="nearMeBtn">
+      <i class="fa-solid fa-location-dot brand-icon"></i>
+      Bạn đang ở?
+      <span id="nearMeText" class="ms-2 text-muted"></span>
     </button>
 
-    <div id="navbarNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto fw-semibold align-items-center gap-2">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Trang chủ</a>
-        </li>
+    <ul class="navbar-nav ms-auto align-items-center gap-4">
+      <li class="nav-item">
+        <a class="nav-link active">Trang chủ</a>
+      </li>
 
-        <li class="nav-item d-none" id="postTab">
-          <a class="nav-link" href="#">Bài đăng</a>
-        </li>
+      <li class="nav-item" id="favTab">
+        <a class="nav-link">Danh sách yêu thích</a>
+      </li>
 
-        <li class="nav-item d-none" id="favTab">
-          <a class="nav-link" href="#">Yêu thích</a>
-        </li>
+       <li class="nav-item" id="">
+        <a class="nav-link">Lịch sử thuê nhà</a>
+      </li>
 
-        <li class="nav-item" id="loginLink">
-          <a class="btn btn-outline-danger btn-sm px-3" href="/auth/login.html">
-            Đăng nhập
-          </a>
-        </li>
+      <li class="nav-item" id="">
+        <a class="nav-link">Đánh giá</a>
+      </li>
 
-        <li class="nav-item d-none" id="userInfo">
-          <span class="me-2 text-muted">👤</span>
-          <span id="usernameDisplay" class="fw-bold text-danger"></span>
-          <a href="#" id="logoutBtn" class="ms-2 text-muted small">Đăng xuất</a>
-        </li>
-      </ul>
-    </div>
+
+
+      <li class="nav-item " id="postTab">
+        <a href="post.html" class="nav-link">Đăng bài</a>
+      </li>
+
+      <li class="nav-item" id="loginLink">
+        <a href="/auth/login.html" class="btn btn-nav">
+          Đăng nhập
+        </a>
+      </li>
+
+      <li class="nav-item d-none user-info" id="userInfo">
+        <span class="user-name" id="usernameDisplay"></span>
+        
+        <a href="#" id="logoutBtn">Đăng xuất</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero-section text-center text-white d-flex align-items-center">
-  <div class="container">
-    <h1 class="fw-bold mb-3">
+
+<section class="hero-section d-flex align-items-center">
+  <div class="hero-overlay"></div>
+
+  <div class="container position-relative text-center">
+
+    <h1 class="hero-title mb-3">
       Tìm kiếm mặt bằng cho thuê tại Hà Nội
     </h1>
-    <p class="lead mb-4 opacity-75">
-      Nền tảng hỗ trợ tìm kiếm, so sánh và lựa chọn mặt bằng kinh doanh hiệu quả
+
+    <p class="hero-sub mb-4">
+      Khám phá căn hộ, văn phòng, cửa hàng phù hợp nhu cầu của bạn
     </p>
 
-    <div class="search-bar mx-auto bg-white rounded-3 shadow-sm p-3 d-flex gap-2">
-      <input id="searchInput" class="form-control border-0" placeholder="Nhập quận, loại hình, tên...">
-      <button id="searchBtn" class="btn btn-danger px-4">
+    <!-- SEARCH BAR -->
+    <div class="hero-search mb-4 mx-auto">
+      
+      <input
+        id="searchInput"
+        placeholder="Nhập quận, loại hình, tên mặt bằng..."
+      />
+      <button id="searchBtn">
         <i class="fa-solid fa-magnifying-glass"></i>
+        Tìm
       </button>
+      <div>
+        
+      </div>
+
+      
+    </div>
+
+    <!-- FILTER -->
+    <div class="hero-filter mx-auto">
+
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label>Quận</label>
+          <select id="filterLocation" class="form-select">
+            <option value="">Tất cả</option>
+            <option>Ba Đình</option>
+            <option>Hoàn Kiếm</option>
+            <option>Đống Đa</option>
+            <option>Hai Bà Trưng</option>
+            <option>Hoàng Mai</option>
+            <option>Thanh Xuân</option>
+            <option>Cầu Giấy</option>
+            <option>Nam Từ Liêm</option>
+            <option>Bắc Từ Liêm</option>
+            <option>Tây Hồ</option>
+            <option>Hà Đông</option>
+            <option>Long Biên</option>
+            <option>Gia Lâm</option>
+            <option>Đông Anh</option>
+            <option>Hoài Đức</option>
+            <option>Thanh Trì</option>
+            <option>Sóc Sơn</option>
+            <option>Sơn Tây</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label>Giá thuê</label>
+          <select id="filterPrice" class="form-select">
+            <option value="">Tất cả</option>
+            <option value="0-5">&lt; 5 triệu</option>
+            <option value="5-10">5 – 10 triệu</option>
+            <option value="10-20">10 – 20 triệu</option>
+            <option value="20-30">20 – 30 triệu</option>
+            <option value="30-50">30 – 50 triệu</option>
+            <option value="50+">&gt; 50 triệu</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label>Diện tích</label>
+          <select id="filterArea" class="form-select">
+            <option value="">Tất cả</option>
+            <option value="0-30">&lt; 30 m²</option>
+            <option value="30-50">30 – 50 m²</option>
+            <option value="50-80">50 – 80 m²</option>
+            <option value="80-120">80 – 120 m²</option>
+            <option value="120-200">120 – 200 m²</option>
+            <option value="200+">&gt; 200 m²</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label>Loại hình</label>
+          <select id="filterBusinessType" class="form-select">
+            <option value="">Tất cả</option>
+            <option>Phòng trọ</option>
+            <option>Căn hộ</option>
+            <option>Nhà nguyên căn</option>
+            <option>Văn phòng</option>
+            <option>Cửa hàng / Shop</option>
+            <option>Quán Cafe</option>
+            <option>Nhà hàng</option>
+            <option>Kho / Xưởng</option>
+            <option>Studio</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-actions mt-3">
+        <button id="applyFilterBtn" class="btn-primary">
+          Áp dụng
+        </button>
+        <button id="resetFilterBtn" class="btn-secondary">
+          Đặt lại
+        </button>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ================= GỢI Ý ================= -->
+
+
+<!-- GỢI Ý GẦN BẠN -->
 <section class="py-5">
   <div class="container">
-    <h4 class="fw-bold text-danger mb-4">
-      🏠 Gợi ý mặt bằng gần bạn
+    <h4 class="btn btn-nav">
+      <i class="fa-solid fa-location-dot brand-icon"></i> Gợi ý gần bạn</h4>
+
+    <div id="nearbyMap" style="height:400px" class="rounded mt-3"></div>
+  </div>
+ 
+
+</section>
+
+
+<!-- AI DỰ ĐOÁN NHU CẦU -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h4 class="fw-bold mb-3">
+      AI dự đoán nhu cầu thuê
     </h4>
-    <div id="nearbyContainer" class="row g-4"></div>
+
+    <div class="row g-2">
+      <div class="col-md-4">
+        <input id="priceInput" class="form-control"
+               placeholder="Giá thuê (VND)">
+      </div>
+
+      <div class="col-md-4">
+        <input id="areaInput" class="form-control"
+               placeholder="Diện tích (m²)">
+      </div>
+
+      <div class="col-md-4">
+        <button id="predictBtn"
+                class="btn bg-dark text-white w-100">
+          Dự đoán
+        </button>
+      </div>
+    </div>
+
+    <h5 id="predictResult"
+        class="mt-3 fw-bold text-success"></h5>
+  </div>
+</section>
+<!-- AI DỰ ĐOÁN GIÁ THUÊ -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h4 class="fw-bold "> AI dự đoán giá thuê</h4>
+
+    <div class="row g-2">
+      <div class="col-md-3">
+        <input id="priceArea" class="form-control" placeholder="Diện tích (m²)">
+      </div>
+      <div class="col-md-3">
+        <input id="priceRooms" class="form-control" placeholder="Số phòng">
+      </div>
+      <div class="col-md-3">
+        <input id="priceDistrict" class="form-control" placeholder="Mã quận">
+      </div>
+      <div class="col-md-3">
+        <button id="predictPriceBtn" class="btn bg-dark text-white w-100 border">
+          Dự đoán giá
+        </button>
+      </div>
+    </div>
+
+    <h5 id="priceResult" class="mt-3 fw-bold text-success"></h5>
   </div>
 </section>
 
-<!-- ================= DANH SÁCH ================= -->
+<!-- DANH SÁCH -->
 <main class="container pb-5">
-  <h3 class="text-center fw-semibold mb-4 text-danger">
-    Danh sách mặt bằng nổi bật
+  <h3 id="mainTitle" class="text-center mb-4">
+    Danh sách mặt bằng
   </h3>
   <div id="listingContainer" class="row g-4"></div>
 </main>
 
-<!-- ================= FOOTER ================= -->
+<!-- MODAL CHI TIẾT -->
+<div class="modal fade" id="detailModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="modalTitle"></h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <img id="modalImage" class="img-fluid rounded mb-3" />
+
+        <p id="modalDesc"></p>
+
+        <ul class="list-unstyled mb-2">
+          <li><b>💰 Giá:</b> <span id="modalPrice"></span></li>
+          <li><b>📐 Diện tích:</b> <span id="modalArea"></span></li>
+          <li><b>📍 Địa chỉ:</b> <span id="modalAddress"></span></li>
+        </ul>
+
+        <ul id="modalFeatures" class="list-unstyled"></ul>
+
+        <iframe id="modalMap" width="100%" height="300" class="rounded border mt-2"></iframe>
+
+        <hr>
+        <h6>📝 Đánh giá</h6>
+        <div id="reviewsList"></div>
+
+        <div class="mt-3">
+          <select id="reviewStars" class="form-select mb-2">
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+          <textarea id="reviewComment" class="form-control mb-2" placeholder="Nhận xét của bạn..."></textarea>
+          <button id="submitReviewBtn" class="btn btn-danger btn-sm">
+            Gửi đánh giá
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="favBtn" class="btn btn-outline-danger btn-sm">
+          ❤️ Yêu thích
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="bg-dark text-white text-center py-3">
-  © 2025 SmartRent • Hệ thống tìm kiếm mặt bằng thông minh
+  © 2025 SmartRent
 </footer>
 
-<!-- ================= JS ================= -->
-<script>
-  window.addEventListener('scroll', () => {
-    document.querySelector('.navbar')
-      .classList.toggle('scrolled', window.scrollY > 40);
-  });
-</script>
-
-<script type="module">
-  const loginLink = document.getElementById("loginLink");
-  const userInfo = document.getElementById("userInfo");
-  const usernameDisplay = document.getElementById("usernameDisplay");
-  const logoutBtn = document.getElementById("logoutBtn");
-  const favTab = document.getElementById("favTab");
-  const postTab = document.getElementById("postTab");
-
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-  if (currentUser) {
-    loginLink.classList.add("d-none");
-    userInfo.classList.remove("d-none");
-    favTab.classList.remove("d-none");
-    postTab.classList.remove("d-none");
-    usernameDisplay.textContent = currentUser.email || "User";
-  } else {
-    loginLink.classList.remove("d-none");
-    userInfo.classList.add("d-none");
-  }
-
-  logoutBtn?.addEventListener("click", (e) => {
-    e.preventDefault();
-    localStorage.clear();
-    window.location.reload();
-  });
-</script>
-
+<script type="module" src="./app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

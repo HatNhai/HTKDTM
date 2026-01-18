@@ -1,0 +1,8 @@
+{
+  "name": "smartrent-convert",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "firebase": "^12.8.0"
+  }
+}

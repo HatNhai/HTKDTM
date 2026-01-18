@@ -1,0 +1,27 @@
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.post-section h2 {
+  color: #0056b3;
+}
+
+form {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+label {
+  color: #333;
+}
+
+button {
+  border-radius: 10px;
+}
